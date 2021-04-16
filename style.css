@@ -1,15 +1,59 @@
+* {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+}
+body {
+  margin: 0px;
+}
 main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   height: 100vh;
   width: 100vw;
+  background-image: url("NTI.png");
+  background-size: cover;
+  overflow: hidden;
 }
 .estet {
-  background-color: red;
+  background-image: url("estetarhus.png");
 }
 .teknik {
-  background-color: blue;
+  background-image: url("teknikarhus.png");
 }
 .el {
-  background-color: green;
+  background-image: url("elarhus.png");
+}
+img {
+  height: 70vh;
+  filter: brightness(70%);
+  transition: 0.6s;
+  overflow: hidden;
+}
+img :hover {
+  transform: scale(1.5);
+}
+main div {
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  justify-content: flex-end;
+  background-size: cover;
+  filter: brightness(80%);
+}
+main div :hover {
+  filter: brightness(110%);
+  transform: scale(1.1);
+}
+h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 5vw;
+  z-index: 1;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+}
+h2 :hover {
+  transform: scale(0.9);
+  filter: brightness(90%);
 }
