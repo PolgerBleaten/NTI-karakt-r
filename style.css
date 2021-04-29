@@ -27,12 +27,12 @@ main {
 img {
   height: 70vh;
   filter: brightness(70%);
-  transition: 0.6s;
   overflow: hidden;
 }
-img :hover {
-  transform: scale(1.5);
+button {
+  background-color: rgba(0, 0, 0, 0);
 }
+
 main div {
   display: flex;
   flex-direction: column;
@@ -41,9 +41,12 @@ main div {
   background-size: cover;
   filter: brightness(80%);
 }
-main div :hover {
-  filter: brightness(110%);
-  transform: scale(1.1);
+button div {
+  transition: 0.6s;
+}
+button div:hover {
+  filter: brightness(120%);
+  transform: scale(1.2);
 }
 h2 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -52,8 +55,4 @@ h2 {
   position: absolute;
   top: 20%;
   left: 25%;
-}
-h2 :hover {
-  transform: scale(0.9);
-  filter: brightness(90%);
 }
