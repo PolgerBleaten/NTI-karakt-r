@@ -1,10 +1,9 @@
 let EstetButton = document.querySelector("[data-estetbutton]");
 let TeknikButton = document.querySelector("[data-teknikbutton]");
 let ElButton = document.querySelector("[data-elbutton]");
-ElButton.addEventListener("click", () => setStudentType("El"));
-EstetButton.addEventListener("click", () => setStudentType("Estet"));
-TeknikButton.addEventListener("click", () => setStudentType("Teknik"))
-
+ElButton.addEventListener("click", () => setStudentType("el"));
+EstetButton.addEventListener("click", () => setStudentType("estet"));
+TeknikButton.addEventListener("click", () => setStudentType("teknik"))
 function createStudent(name, age) {
     let student = {
         type: localStorage.getItem("studentType"),
