@@ -3,9 +3,6 @@
   border: 0px;
   padding: 0px;
 }
-body {
-  margin: 0px;
-}
 main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -14,6 +11,16 @@ main {
   background-image: url("NTI.png");
   background-size: cover;
   overflow: hidden;
+}
+
+h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 5vw;
+  z-index: 1;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  right: 25%;
 }
 .estet {
   background-image: url("estetarhus.png");
@@ -33,6 +40,12 @@ button {
   background-color: rgba(0, 0, 0, 0);
 }
 
+.icon {
+  height: 8vw;
+  width: 8vw;
+  align-self: center;
+  justify-self: flex-start;
+}
 main div {
   display: flex;
   flex-direction: column;
@@ -45,14 +58,18 @@ button div {
   transition: 0.6s;
 }
 button div:hover {
-  filter: brightness(120%);
+  filter: brightness(125%);
   transform: scale(1.2);
 }
-h2 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 5vw;
-  z-index: 1;
-  position: absolute;
-  top: 20%;
-  left: 25%;
+
+#El {
+  color: blue;
+  left: 35%;
+}
+#Es {
+  color: hotpink;
+}
+#Te {
+  color: brown;
+  left: 20%;
 }

@@ -1,0 +1,32 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+label {
+  color: red;
+}
+input[type="submit"] {
+  width: 15vw;
+  height: 4.5vw;
+  font-size: 2vw;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+form input {
+  margin-bottom: 4vw;
+}
+input[type="submit"]:hover {
+  background-color: salmon;
+}
+form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  width: 50vw;
+}
