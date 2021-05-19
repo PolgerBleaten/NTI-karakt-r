@@ -6,5 +6,5 @@ EstetButton.addEventListener("click", () => setStudentType("estet"));
 TeknikButton.addEventListener("click", () => setStudentType("teknik"))
 function setStudentType(type){
     localStorage.setItem("studentType", type);
-    location.href = "Custom.html";
+    location.href = "custom.html";
 }
