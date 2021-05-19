@@ -5,23 +5,35 @@
 main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 25vh 1fr 25vh;
+  grid-template-rows: 8vh 1fr 25vh;
   height: 100vh;
+  background-image: url("NTI.png");
+  background-size: cover;
 }
 label {
-  color: red;
+  font-family: sans-serif;
+  color: blue;
 }
 input[type="submit"] {
   width: 15vw;
   height: 4.5vw;
   font-size: 2vw;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: lightgray;
 }
-form input {
-  margin-bottom: 4vw;
+form label {
+  margin-bottom: 2vh;
+}
+#noname,
+#noage {
+  color: red;
 }
 input[type="submit"]:hover {
-  background-color: salmon;
+  background-color: rgb(25, 190, 25);
+}
+input[type="submit"] {
+  border-radius: 0.5vw;
+  background-color: green;
 }
 form {
   grid-row: 2;
@@ -49,11 +61,13 @@ form {
   top: 9.5vh;
 }
 .Customization {
+  padding: 1vw;
   display: flex;
   flex-direction: row;
   grid-row: 3;
   grid-column: 1/4;
   justify-self: center;
+  background-color: rgba(153, 0, 153, 0.5);
 }
 .Customization img {
   margin-right: 2vw;

@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 1fr 15vh;
+}
+main {
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer {
+  background-color: rgba(170, 48, 170, 0.705);
+  padding: 2vw;
+  display: grid;
+  grid-template-columns: 30vw 1fr 30vw;
+  grid-template-rows: 1fr 1fr;
+}
+table {
+  width: 40%;
+  height: 100%;
+  border: black solid 1px;
+  display: grid;
+  grid-template-rows: 10% 1fr 10%;
+  background-color: rgb(245, 245, 156);
+}
+thead,
+tfoot {
+  background-color: green;
+}
+td {
+  border: white solid 1px;
+  padding-top: 10%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 52% 1fr;
+  height: 72%;
+}
+.attribute {
+  grid-column: 1;
+  background-color: rgba(31, 170, 31, 0.712);
+}
+.description {
+  grid-column: 3;
+  background-color: greenyellow;
+  display: flex;
+  justify-content: flex-end;
+}
+.character {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+}
+#body {
+  width: 20vw;
+  position: absolute;
+  right: 39.5vw;
+  top: 8vh;
+  border: gold 0.5vw solid;
+}
+#hår {
+  width: 12vw;
+  position: absolute;
+  right: 44vw;
+  top: 9.5vh;
+}
+.sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(170, 48, 170, 0.705);
+  width: 30%;
+  height: 100%;
+}
+tbody {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.name {
+  align-self: center;
+  justify-self: bottom;
+}
+#title {
+  border-top: solid 0.2vw black;
+}
+h2 {
+  font-size: 1.5vw;
+}
+footer div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#bottomleft {
+  border-top: black solid 0.2vw;
+  grid-row: 2;
+}
+#topright {
+  grid-column: 3;
+}
+#bottomright {
+  border-top: solid black 0.2vw;
+  grid-column: 3;
+}
+.center {
+  grid-row: 2;
+  border-top: dashed 0.2vw black;
+}
+h1 {
+  font-size: 3vw;
+}

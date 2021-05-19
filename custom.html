@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A page for creating a Character">
+    <meta name="description" content="En sida där man kan skapa en NTI elev">
     <link rel="stylesheet" href="custom.css">
     <script src="custom.js" defer></script>
-    <title>Document</title>
+    <title>Bygg din elev!</title>
 </head>
 <body>
     <main>
         <form onsubmit="return createstudent()">
             <label for="name">Namn</label>
             <input type="text" id="name" placeholder="Mikael">
+            <label for="name" id="noname"></label>
             <label for="age">Ålder</label>
             <input type="text" id="age" placeholder="17">
-            <input type="submit" value="Skapa" >
+            <label for="age" id="noage"></label>
+            <input type="submit" value="Skapa">
         </form>
         <div class="character">
             <img src="teknikhår2.png" alt="Hår" id="hår">
-            <img src="teknikare2.png" alt="Kropp" id="body">
+            <img src="teknik.png" alt="Kropp" id="body">
         </div>
         <div class="Customization">
             <img src="circle.png" alt="Red" id="Red" title="Red">

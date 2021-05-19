@@ -32,7 +32,7 @@ h2 {
   background-image: url("elarhus.png");
 }
 img {
-  height: 70vh;
+  width: 33.3333vw;
   filter: brightness(70%);
   overflow: hidden;
 }
