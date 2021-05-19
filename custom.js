@@ -1,3 +1,4 @@
+//fisk
 student = localStorage.getItem("studentType");
 let BlueButton = document.getElementById("Blue");
 let BlackButton = document.getElementById("Black");
